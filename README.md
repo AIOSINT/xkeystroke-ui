@@ -17,7 +17,7 @@ Xkeystroke UI is a web interface for Xkeystroke, providing a dashboard and user 
 ### Clone the repository
 
 ```bash
-git clone https://github.com/your-username/xkeystroke-ui.git
+git clone https://github.com/AIOSINT/xkeystroke-ui.git
 cd xkeystroke-ui
 ```
 
