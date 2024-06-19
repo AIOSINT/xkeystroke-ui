@@ -1,0 +1,14 @@
+[
+  {
+    "uuid": "ec2a9d00-f498-4cb6-9a5e-212263de97b1",
+    "username": "abner",
+    "password": "81abb4ff284d2145fb7c3d8ee7b28a8d:a1c148128b",
+    "role": "admin"
+  },
+  {
+    "uuid": "fb0e95a7-612b-4ade-b688-ce5ac1be577f",
+    "username": "baca",
+    "password": "8cd13001be022d67e6fd73fa6caa6ff4:16d84a98",
+    "role": "user"
+  }
+]

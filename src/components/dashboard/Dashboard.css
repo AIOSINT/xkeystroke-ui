@@ -1,0 +1,32 @@
+.dashboard-container {
+    padding: 20px;
+    color: white; /* Ensure text is readable */
+}
+
+.dashboard-widgets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.widget {
+    background-color: #3b5998;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-align: center;
+    font-family: 'Borda', sans-serif;
+}
+
+.widget h3 {
+    margin-bottom: 10px;
+    font-weight: 600; /* Use DemiBold weight */
+}
+
+.widget p {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 600; /* Use DemiBold weight */
+    color: #00FF00; /* Bright green color */
+}

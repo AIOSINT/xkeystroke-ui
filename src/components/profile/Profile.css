@@ -1,0 +1,97 @@
+@import '../login/Auth.css';
+
+.profile-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #032d31;
+    border: 1px solid #ff0000;
+    border-radius: 8px;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-header h2 {
+    margin: 0;
+}
+
+.uuid-section {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.uuid-container {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #d1d5da;
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-family: monospace;
+    cursor: pointer;
+    position: relative;
+}
+
+.uuid-container:hover .uuid {
+    background-color: #e0e0e0;
+}
+
+.uuid {
+    background-color: #e0e0e0;
+    border-radius: 3px;
+    padding: 2px 5px;
+    user-select: text; /* Make the text selectable */
+}
+
+.copy-message {
+    margin-left: 10px;
+    color: #28a745;
+    font-size: 0.9em;
+}
+
+.profile-form .form-group {
+    margin-bottom: 15px;
+}
+
+.profile-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.profile-form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #d1d5da;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.btn-update, .btn-logout {
+    background-color: #0366d6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.btn-update:hover, .btn-logout:hover {
+    background-color: #0356b6;
+}
+
+.btn-logout {
+    background-color: #d73a49;
+}
+
+.btn-logout:hover {
+    background-color: #c5303d;
+}

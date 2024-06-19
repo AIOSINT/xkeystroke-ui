@@ -1,0 +1,56 @@
+.user-list-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #032d31; /* Background color */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-list-container h2 {
+    color: #ffffff; /* White text color */
+    text-align: center; /* Center align the title */
+  }
+  
+  .user-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Space out the user cards */
+  }
+  
+  .user-card {
+    background-color: #1e1e1e; /* Dark background for user cards */
+    border: 1px solid #ff4500; /* Border similar to The Division 2 style */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px; /* Fixed width for user cards */
+    color: #ffffff; /* White text color */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    position: relative;
+  }
+  
+  .user-card-actions {
+    display: flex;
+    justify-content: space-between; /* Space out the buttons */
+    margin-top: 10px;
+  }
+  
+  .user-card button {
+    background-color: #ff4500; /* Orange button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .user-card button:hover {
+    background-color: #e03c00; /* Darker orange on hover */
+  }
+  
+  .error {
+    color: red;
+    text-align: center;
+  }
+  
