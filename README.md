@@ -27,6 +27,8 @@ Navigate to the server directory and install server dependencies:
 ```bash
 cd server
 npm install
+cd ..
+npm install
 ```
 
 ## Running the Application
