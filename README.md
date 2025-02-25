@@ -59,3 +59,7 @@ Open your web browser and navigate to http://localhost:3000.
 - API Endpoints
 
 A lot more to come..
+
+## Acknowledgements
+
+This project utilizes the [Aibolit scanner](https://github.com/gregzem/aibolit) for malware and virus scanning. The Aibolit scanner is developed by Greg Zemskov and is available for non-commercial use. We have built upon this tool to enhance our application's security features.
