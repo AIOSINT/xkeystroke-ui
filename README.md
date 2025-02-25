@@ -24,8 +24,10 @@ bash
 git clone https://github.com/your-username/xkeystroke-ui.git
 cd xkeystroke-ui
 
-## Install dependencies
+### Install dependencies
+
 Navigate to the server directory and install server dependencies:
+
 bash
 cd server
 npm install
@@ -33,20 +35,20 @@ npm install
 ## Running the Application
 
 ### Start the frontend & backend
+
 From the root directory, run:
 
-```bash
+bash
 npm start
-```
 
-This will start the backend Express.js server on port 3001.
-
-This will start the frontend React development server on port 3000.
+This command will start both the backend Express.js server on port 3001 and the frontend React development server on port 3000.
 
 ### Access the application
-Open your web browser and navigate to http://localhost:3000.
+
+Open your web browser and navigate to [http://localhost:3000](http://localhost:3000).
 
 ## Current Features
+
 - User authentication (Login/Signup)
 - Dashboard with various widgets
 - User management for admin users
@@ -60,7 +62,7 @@ Open your web browser and navigate to http://localhost:3000.
   - Copy user UUID
 - API Endpoints
 
-A lot more to come..
+A lot more to come...
 
 ## Acknowledgements
 
@@ -79,3 +81,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Contact
 
 For questions or support, please contact [your email].
+
