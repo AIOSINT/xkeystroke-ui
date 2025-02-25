@@ -20,17 +20,23 @@ Xkeystroke UI is a web interface for Xkeystroke, providing a dashboard and user 
 - npm (v6 or later)
 
 ### Clone the repository
-bash
+
+
+`
 git clone https://github.com/your-username/xkeystroke-ui.git
-cd xkeystroke-ui
+cd xkeystroke-ui  `
+
+
 
 ### Install dependencies
 
 Navigate to the server directory and install server dependencies:
 
-bash
+
+`  bash
 cd server
-npm install
+npm install  `
+
 
 ## Running the Application
 
@@ -38,8 +44,8 @@ npm install
 
 From the root directory, run:
 
-bash
-npm start
+`bash
+npm start`
 
 This command will start both the backend Express.js server on port 3001 and the frontend React development server on port 3000.
 
