@@ -33,7 +33,7 @@ cd xkeystroke-ui  `
 Navigate to the server directory and install server dependencies:
 
 
-`  bash
+`  
 cd server
 npm install  `
 
