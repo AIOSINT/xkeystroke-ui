@@ -58,3 +58,41 @@
 .dropdown-toggle .short-uuid {
     margin-right: 10px; /* Increase margin to add space */
 }
+
+.role-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    margin-left: 10px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.role-badge.admin {
+    background: linear-gradient(45deg, #ff4500, #ff8c00);
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 69, 0, 0.3);
+}
+
+.role-badge.user {
+    background: linear-gradient(45deg, #2196F3, #00BCD4);
+    color: white;
+    box-shadow: 0 0 10px rgba(33, 150, 243, 0.3);
+}
+
+/* Update the dropdown styles to accommodate the badge */
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.dropdown-toggle::after {
+    margin-left: 10px;
+}
+
+#basic-nav-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

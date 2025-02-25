@@ -98,25 +98,25 @@
 }
 
 body {
-    background: linear-gradient(45deg, #045b62, #32a852);
+    background: linear-gradient(45deg, #000000, #1a1a1a, #2d2d2d);
     background-size: 400% 400%;
     animation: gradientBackground 10s ease infinite;
     color: white;
-  }
-  
-  @keyframes gradientBackground {
+}
+
+@keyframes gradientBackground {
     0% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
     50% {
-      background-position: 100% 50%;
+        background-position: 100% 50%;
     }
     100% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
-  }
-  
-  .container {
+}
+
+.container {
     padding-top: 60px; /* To prevent overlap with fixed navbar */
-  }
+}
   

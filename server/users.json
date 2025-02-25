@@ -1,14 +1,33 @@
-[
-  {
-    "uuid": "ec2a9d00-f498-4cb6-9a5e-212263de97b1",
-    "username": "abner",
-    "password": "81abb4ff284d2145fb7c3d8ee7b28a8d:a1c148128b",
-    "role": "admin"
-  },
-  {
-    "uuid": "fb0e95a7-612b-4ade-b688-ce5ac1be577f",
-    "username": "baca",
-    "password": "8cd13001be022d67e6fd73fa6caa6ff4:16d84a98",
-    "role": "user"
-  }
-]
+{
+  "users": [
+    {
+      "uuid": "7529d12a-80a9-4ef1-a5ae-eff6b27a54de",
+      "username": "owo",
+      "password": "2cffef764bf04ac11724e9722fa35cfc:e5df3a",
+      "role": "admin",
+      "createdAt": "2025-02-22T05:20:33.646Z"
+    },
+    {
+      "uuid": "4b9539a0-d069-4140-9d43-6ef6b0f0df3d",
+      "username": "d",
+      "password": "341501b65b585cb652dbfa190c985a33:74",
+      "role": "user",
+      "createdAt": "2025-02-22T05:20:57.534Z"
+    },
+    {
+      "uuid": "e1458e02-98e3-44cb-8b54-6746e90f4f5e",
+      "username": "dd",
+      "password": "c9d3f664cfd16144d673f8c7536864f5:5e98",
+      "role": "admin",
+      "createdAt": "2025-02-22T11:02:53.615Z"
+    },
+    {
+      "uuid": "6658bac1-d4d0-4a9a-bf55-9358144ae817",
+      "username": "nword",
+      "password": "f6776aa30456a1dce6d08b14934ae4a1:07263d9ada",
+      "role": "admin",
+      "createdAt": "2025-02-22T11:03:31.195Z"
+    }
+  ],
+  "lastUpdated": "2025-02-22T11:08:48.371Z"
+}
