@@ -645,6 +645,9 @@ const analyzeFile = async (file) => {
         logs.push(`SHA1: ${hashes.sha1}`);
         logs.push(`SHA256: ${hashes.sha256}`);
 
+        // Calculate entropy for risk assessment
+        const entropy = calculateEntropy(buffer);
+
         // Check for EICAR test file
         logs.push('Checking for malicious patterns...');
         const isEicarTest = EICAR_SIGNATURES.some(signature => 
@@ -664,6 +667,7 @@ const analyzeFile = async (file) => {
                 created: stats.birthtime.toLocaleString(),
                 modified: stats.mtime.toLocaleString(),
                 accessed: stats.atime.toLocaleString(),
+                entropy: entropy,
                 canRead: true,
                 canWrite: (stats.mode & fs.constants.S_IWUSR) !== 0,
                 canExecute: (stats.mode & fs.constants.S_IXUSR) !== 0,
@@ -694,9 +698,28 @@ const analyzeFile = async (file) => {
             }
         };
 
+        // Determine basic risk factors
+        const riskFactors = [];
+        if (isEicarTest) {
+            riskFactors.push('EICAR test signature detected');
+        }
+        if (file.size > 50 * 1024 * 1024) {
+            riskFactors.push('Large file size');
+        }
+
+        analysis.riskFactors = riskFactors;
+        analysis.riskLevel = riskFactors.length > 0 ? 'high' : 'low';
+        analysis.summary = generateRiskSummary(
+            riskFactors,
+            analysis.contentAnalysis.fileType,
+            entropy,
+            file.size
+        );
+
         return {
             results: {
                 analysis,
+                summary: analysis.summary,
                 threats: isEicarTest ? 1 : 0,
                 logs: logs
             }
@@ -732,11 +755,12 @@ router.post('/scan', checkRateLimit, upload.single('file'), async (req, res) => 
 
         console.log('File received:', req.file.originalname);
         const results = await analyzeFile(req.file);
-        
+
         // Send the complete results including logs
         res.json({
             results: {
                 analysis: results.results.analysis,
+                summary: results.results.summary,
                 threats: results.results.threats,
                 logs: results.results.logs.map(log => ({
                     time: new Date().toLocaleTimeString(),
