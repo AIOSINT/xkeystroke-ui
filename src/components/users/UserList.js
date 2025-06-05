@@ -196,7 +196,8 @@ const UserList = () => {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${localStorage.getItem('token')}`
+          'Authorization': `Bearer ${localStorage.getItem('token')}`,
+          'user-role': localStorage.getItem('userRole')
         },
         body: JSON.stringify({ newRole })
       });
