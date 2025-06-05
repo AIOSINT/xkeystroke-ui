@@ -502,7 +502,7 @@ const EICAR_SIGNATURES = [
     Buffer.from('UEsDBAoAAAAAAOCYvVAhbVoYJAAAACQAAAAIAAAAZWljYXIuY29tWDVPIVAlQEFQWzRcUFpYNTQoUF4pN0NDKTd9JEVJQ0FSLVNUQU5EQVJELUFOVElWSVJVUy1URVNULUZJTEUhJEgrSCpQSwECFAAKAAAAAADgmL1QIW1aGCQAAAAkAAAACAAAAAAAAAAAAIAAAAAAAAAARUlDQVIuQ09NUEsDBAoAAAAAAOCYvVAhbVoYJAAAACQAAAAIAAAAZWljYXIuY29t', 'base64').toString()
 ];
 
-// Add this function at the top with other utility functions
+// Utility function to generate a summary of the analysis
 const generateFileSummary = (file, analysis) => {
     try {
         let summary = `File Analysis Summary:\n\n`;
